@@ -25,16 +25,14 @@ Now type -> **npm install**
 
 ## Running the app
 
-```bash
 To run the backend application of the program
-Type the following in the backend terminal -> ** npm run start:dev**
+
+Type the following in the backend terminal -> **npm run start:dev**
 
 To run the frontend application of the program
-Type the following in the backend terminal -> ** npm run dev**
-```
+
+Type the following in the backend terminal -> **npm run dev**
 
 ## Test
 
-```bash
 To run the End-To-End tests, type the following in the backend terminal -> **npm run test:e2e**
-```
