@@ -7,7 +7,7 @@ The developers for this project are: Kasper, Victor, Christian, Nicolaj
 
 ## Installation
 
-###Before you can run the program you must download some packages.
+### Before you can run the program you must download some packages.
 
 First open 2 terminals
 
