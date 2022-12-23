@@ -7,7 +7,6 @@ The developers for this project are: Kasper, Victor, Christian, Nicolaj
 
 ## Installation
 
-```bash
 ### Before you can run the program you must download some packages.
 First open 2 terminals
 In the first terminal type the following -> **cd ./daos-backend**
@@ -16,7 +15,6 @@ Now type -> **npm install**
 In the second terminal type the following -> **cd ./daos-frontend**
 This will change the folder you are in an make you able to download the right packages for the frontend
 Now type -> **npm install**
-```
 
 ## Running the app
 
