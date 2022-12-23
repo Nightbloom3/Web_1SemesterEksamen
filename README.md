@@ -2,7 +2,7 @@
 
 This is an exam assignment based on the real project developed by Kvalifik, which focused on getting musicians to get together in ensembles to make epic master pieces.
 
-The developers for this project are: Kasper, Victor, Christian, Nicolaj
+The developers for this project are: Victor, Christian, Nicolaj, Kasper
 
 
 ## Installation
