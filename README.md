@@ -31,7 +31,7 @@ Type the following in the backend terminal -> **npm run start:dev**
 
 To run the frontend application of the program
 
-Type the following in the backend terminal -> **npm run dev**
+Type the following in the frontend terminal -> **npm run dev**
 
 ## Test
 

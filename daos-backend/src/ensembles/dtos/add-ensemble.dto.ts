@@ -12,7 +12,7 @@ export class AddEnsembleDTO {
     @IsNumberString()
     readonly zipCode: string;
 
-    @IsAlpha()
+    @MinLength(1)
     readonly city: string;
 
     @MinLength(1)

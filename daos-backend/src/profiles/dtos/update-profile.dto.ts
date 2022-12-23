@@ -1,11 +1,11 @@
-import { IsAlpha, IsEmail } from "class-validator";
+import { IsAlpha, IsEmail, MinLength } from "class-validator";
 
 export class UpdateProfileDTO {
     
-    @IsAlpha()
+    @MinLength(1)
     readonly firstName: string;
 
-    @IsAlpha()
+    @MinLength(1)
     readonly lastName: string;
 
     readonly description: string;

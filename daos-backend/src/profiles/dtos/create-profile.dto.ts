@@ -6,7 +6,7 @@ export class CreateProfileDTO {
     @IsAlpha()
     readonly firstName: string;
     
-    @IsAlpha()
+    @MinLength(1)
     readonly lastName: string;
 
     readonly zipCode: string;
