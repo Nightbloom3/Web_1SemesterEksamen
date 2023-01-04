@@ -2,11 +2,10 @@ import { IsAlpha, IsEmail, MinLength } from "class-validator";
 
 
 export class CreateProfileDTO {
-    
-    @IsAlpha()
-    readonly firstName: string;
-    
+
     @MinLength(1)
+    readonly firstName: string;
+
     readonly lastName: string;
 
     readonly zipCode: string;
