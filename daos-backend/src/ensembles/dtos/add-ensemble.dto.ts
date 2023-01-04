@@ -1,4 +1,4 @@
-import { IsAlpha, IsNumberString, MinLength } from "class-validator";
+import { IsNumberString, MinLength } from "class-validator";
 
 export class AddEnsembleDTO {
     

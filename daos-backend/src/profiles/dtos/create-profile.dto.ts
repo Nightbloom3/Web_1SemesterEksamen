@@ -1,4 +1,4 @@
-import { IsAlpha, IsEmail, MinLength } from "class-validator";
+import { IsEmail, MinLength } from "class-validator";
 
 
 export class CreateProfileDTO {
@@ -6,6 +6,7 @@ export class CreateProfileDTO {
     @MinLength(1)
     readonly firstName: string;
 
+    @MinLength(1)
     readonly lastName: string;
 
     readonly zipCode: string;

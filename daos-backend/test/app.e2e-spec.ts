@@ -143,7 +143,7 @@ describe('AppController (e2e)', () => {
 
       // Assert
       const afterSignUp = await profilesService.findAll();
-      expect(signUp.body.message).toEqual(["firstName must contain only letters (a-zA-Z)"]);
+      expect(signUp.body.message).toEqual(["firstName must be longer than or equal to 1 characters"]);
       expect(beforeSignUp.length).toEqual(0);
       expect(afterSignUp.length).toEqual(0);
     });
@@ -173,35 +173,6 @@ describe('AppController (e2e)', () => {
       // Assert
       const afterSignUp = await profilesService.findAll();
       expect(signUp.body.message).toEqual(["lastName must be longer than or equal to 1 characters"]);
-      expect(beforeSignUp.length).toEqual(0);
-      expect(afterSignUp.length).toEqual(0);
-    });
-
-    it('Sign up / Create Profile - Fail - firstname numbers', async () => {
-      //Arrange - Setup
-      const beforeSignUp = await profilesService.findAll();
-
-      const newProfile = new CreateProfileDTO(
-        '123', //firstName
-        'Tester', //lastName
-        'Copenhagen', // City
-        '1050', // ZipCode
-        'test@gmail.com', //email
-        '99999999', //password
-        true, //conditions
-        true, //newsletter
-        true // Status - seeking
-      );
-
-      // Act
-      const signUp = await request(app.getHttpServer())
-        .post('/profiles/auth/sign-up')
-        .send(newProfile)
-        .expect(400);//Assert - Bad Request
-
-      // Assert
-      const afterSignUp = await profilesService.findAll();
-      expect(signUp.body.message).toEqual(["firstName must contain only letters (a-zA-Z)"]);
       expect(beforeSignUp.length).toEqual(0);
       expect(afterSignUp.length).toEqual(0);
     });
