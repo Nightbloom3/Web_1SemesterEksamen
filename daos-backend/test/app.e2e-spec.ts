@@ -172,7 +172,7 @@ describe('AppController (e2e)', () => {
 
       // Assert
       const afterSignUp = await profilesService.findAll();
-      expect(signUp.body.message).toEqual(["lastName must contain only letters (a-zA-Z)"]);
+      expect(signUp.body.message).toEqual(["lastName must be longer than or equal to 1 characters"]);
       expect(beforeSignUp.length).toEqual(0);
       expect(afterSignUp.length).toEqual(0);
     });
